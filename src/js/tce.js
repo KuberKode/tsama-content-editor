@@ -377,6 +377,7 @@ function tceEditor(options){
 		_E.tceHtml.className = "tce-doc-html";
 		_E.tceHtml.id = "tceHtml-"+_E.key;
 		_E.tceHtml.classList.add("visually-hidden");
+		_E.tceHtml.value = _E.content;
 		_E.tceHtml.onblur = function(){
 			_E.UpdatePreview();
 		}
